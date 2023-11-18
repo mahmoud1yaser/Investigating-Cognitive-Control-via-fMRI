@@ -132,7 +132,7 @@ Kelly, A.M., Uddin, L.Q., Biswal, B.B., Castellanos, F.X., Milham, M.P. (2008). 
 
 ## Submission
 
-This report, authored by Mahmoud Yaser Salman, was submitted as the final project for the "Neuroimaging" course, under the guidance of Prof. Meena Makary.
+This [Report](Investigating-Cognitive-Control-via-fMRI_Report.pdf), authored by Mahmoud Yaser Salman, was submitted as the final project for the "Neuroimaging" course, under the guidance of Prof. Meena Makary.
 
 ## Scripts
 
