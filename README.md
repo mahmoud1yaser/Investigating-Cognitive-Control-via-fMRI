@@ -126,8 +126,9 @@ Despite indirect relationships observed, the study provides valuable insights in
 
 ## References
 
-- Kelly, A.M., Uddin, L.Q., Biswal, B.B., Castellanos, F.X., Milham, M.P. (2008). Neuroimage, 39(1):527-37.
-- Soares JM, Magalhães R, Moreira PS, Sousa A, et al. (2016). Front. Neurosci. 10:515.
+Kelly, A.M., Uddin, L.Q., Biswal, B.B., Castellanos, F.X., Milham, M.P. (2008). Competition between functional brain networks mediates behavioral variability. Neuroimage, 39(1):527-37
+- Soares JM, Magalhães R, Moreira PS, Sousa A, Ganz E, Sampaio A, Alves V, Marques P and Sousa N (2016) A Hitchhiker’s Guide to Functional Magnetic Resonance Imaging. Front. Neurosci. 10:515. doi: 10.3389/fnins.2016.00515
+- AndysBrainBook website (https://andysbrainbook.readthedocs.io/en/latest/)
 
 ## Submission
 
