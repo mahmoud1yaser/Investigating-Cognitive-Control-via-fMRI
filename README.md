@@ -127,11 +127,11 @@ Despite indirect relationships observed, the study provides valuable insights in
 ## References
 
 - Kelly, A.M., Uddin, L.Q., Biswal, B.B., Castellanos, F.X., Milham, M.P. (2008). Neuroimage, 39(1):527-37.
-- Soares JM, Magalh„es R, Moreira PS, Sousa A, et al. (2016). Front. Neurosci. 10:515.
+- Soares JM, Magalh√£es R, Moreira PS, Sousa A, et al. (2016). Front. Neurosci. 10:515.
 
 ## Submission
 
-Report by Mahmoud Yaser Salman, submitted to Prof. Meena Makary.
+This report, authored by Mahmoud Yaser Salman, was submitted as the final project for the "Neuroimaging" course, under the guidance of Prof. Meena Makary.
 
 ## Scripts
 
