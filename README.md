@@ -136,4 +136,4 @@ This [Report](Investigating-Cognitive-Control-via-fMRI_Report.pdf), authored by 
 
 ## Scripts
 
-The repository includes all scripts utilized in the analysis, many of which were graciously shared by my friend Omar Saad. These scripts, adapted from [Andy's Brain Book](https://andysbrainbook.readthedocs.io/en/latest/fMRI_Short_Course/fMRI_Intro.html), proved to be versatile and contributed significantly to achieving similar results. Unfortunately, my own scripts had to be removed due to unexpected issues with my WSL 2.0 setup. The entire analysis was conducted on Linux Ubuntu 22.04 using WSL 2.0 from a Windows environment.
+The repository includes all [scripts](scripts/) utilized in the analysis, many of which were graciously shared by my friend Omar Saad. These scripts, adapted from [Andy's Brain Book](https://andysbrainbook.readthedocs.io/en/latest/fMRI_Short_Course/fMRI_Intro.html), proved to be versatile and contributed significantly to achieving similar results. Unfortunately, my own scripts had to be removed due to unexpected issues with my WSL 2.0 setup. The entire analysis was conducted on Linux Ubuntu 22.04 using WSL 2.0 from a Windows environment.
