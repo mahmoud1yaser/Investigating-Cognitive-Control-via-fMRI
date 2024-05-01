@@ -85,7 +85,7 @@ Regions of interest (ROIs) were identified and confirmed using a confirmation te
 3. **Contrast 3: Active incongruent minus congruent pixels only**
    - ![Figure 3](assets/images/Fig3.png) Active pixels showing specific regions of activation.
 
-### Second-Level Analysis Results
+### Third-Level Analysis Results
 
 4. **Flame 1 based on Fixed Effect**
    - ![Figure 4](assets/images/Fig4.png) Results indicating the most favorable choosed algorithm.
@@ -96,25 +96,21 @@ Regions of interest (ROIs) were identified and confirmed using a confirmation te
 6. **Flame 1 based on Simple OLS**
    - ![Figure 6](assets/images/Fig7.png) Results using Simple OLS.
 
-### Third-Level Analysis Results
-
-7. **Incongruent minus congruent clusters**
-   - ![Figure 7](assets/images/Fig8.png) Clusters showing significant activation.
 
 ### ROI Analysis Results
 
-8. **Contrast type dominance on each key point**
-   - ![Figure 8](assets/images/Fig10.png) All key spheres exhibit a P-value <<< 0.001 for each contrast, signifying their statistical significance; furthermore, complete overlap enables the assessment of contrast ratios within the key point spheres, with Python code scripts utilized for mean calculation, one-sample t-tests, and figure generation.
+7. **Contrast type dominance on each key point**
+   - ![Figure 7](assets/images/Fig10.png) All key spheres exhibit a P-value <<< 0.001 for each contrast, signifying their statistical significance; furthermore, complete overlap enables the assessment of contrast ratios within the key point spheres, with Python code scripts utilized for mean calculation, one-sample t-tests, and figure generation.
 
 ### Final Results
-9. **Cluster 3, 6 (Lateral Occipital Cortex, Inferior division) [Silver Color]**
-   - ![Figure 9](assets/images/Fig15.png) The flanker task's connection to the "Lateral Occipital Cortex, Inferior division" is indirect; although focused on cognitive control, the task involves initial visual processing, suggesting the cortex contributes to early visual analysis of flanker stimuli.
+8. **Cluster 3, 6 (Lateral Occipital Cortex, Inferior division) [Silver Color]**
+   - ![Figure 8](assets/images/Fig15.png) The flanker task's connection to the "Lateral Occipital Cortex, Inferior division" is indirect; although focused on cognitive control, the task involves initial visual processing, suggesting the cortex contributes to early visual analysis of flanker stimuli.
 
-10. **Cluster 5 (Lateral Occipital Cortex, Superior division) [Silver Color]**
-    - ![Figure 10](assets/images/Fig16.png) Reveals a non-direct association between the flanker task and the "Lateral Occipital Cortex, Superior division," primarily engaged in visual motion processing, indicating a potential involvement in aspects like motion perception during the flanker task.
+9. **Cluster 5 (Lateral Occipital Cortex, Superior division) [Silver Color]**
+    - ![Figure 9](assets/images/Fig16.png) Reveals a non-direct association between the flanker task and the "Lateral Occipital Cortex, Superior division," primarily engaged in visual motion processing, indicating a potential involvement in aspects like motion perception during the flanker task.
 
-11. **Cluster 4 (Precentral Gyrus) [Silver Color]**
-    - ![Figure 11](assets/images/Fig17.png) Illustrates an indirect link between the flanker task and the "Precentral Gyrus," a key area for motor control, with cognitive control regions like ACC, DLPFC, and IFG facilitating motor response execution during the task.
+10. **Cluster 4 (Precentral Gyrus) [Silver Color]**
+    - ![Figure 10](assets/images/Fig17.png) Illustrates an indirect link between the flanker task and the "Precentral Gyrus," a key area for motor control, with cognitive control regions like ACC, DLPFC, and IFG facilitating motor response execution during the task.
 
 ## Discussion
 
