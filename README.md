@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This report presents a detailed analysis of the Flanker Dataset using functional magnetic resonance imaging (fMRI) to explore the neural basis of cognitive control. The study focuses on investigating differences in the BOLD signal between Congruent and Incongruent Flanker trials. Various analyses, including cognitive control assessment, quality control, preprocessing, statistical modeling, and post-analysis, were conducted using the FSL software. The findings contribute valuable insights into the neural mechanisms underlying cognitive control and response inhibition.
+This report presents a detailed analysis of the Flanker Dataset using functional magnetic resonance imaging (fMRI) to explore the neural basis of cognitive control. The study focuses on investigating differences in the BOLD signal between Congruent and Incongruent Flanker trials. Various analyses, including quality control, preprocessing, statistical modeling, and post-analysis, were conducted using the FSL software. The findings contribute valuable insights into the neural mechanisms underlying cognitive control and response inhibition.
 
 ## Table of Contents
 
@@ -10,7 +10,6 @@ This report presents a detailed analysis of the Flanker Dataset using functional
 - [Experimental Design](#experimental-design)
 - [Data Collection](#data-collection)
 - [Analysis](#analysis)
-  - [Cognitive Control Assessment](#cognitive-control-assessment)
   - [Quality Control](#quality-control)
   - [Preprocessing](#preprocessing)
   - [First-Level Analysis](#first-level-analysis)
@@ -18,11 +17,6 @@ This report presents a detailed analysis of the Flanker Dataset using functional
   - [Third-Level Analysis](#third-level-analysis)
   - [ROI Analysis](#roi-analysis)
 - [Results and Interpretation](#results-and-interpretation)
-  - [First-Level Analysis Results](#first-level-analysis-results)
-  - [Second-Level Analysis Results](#second-level-analysis-results)
-  - [Third-Level Analysis Results](#third-level-analysis-results)
-  - [ROI Analysis Results](#roi-analysis-results)
-  - [Final Results](#final-results)
 - [Discussion](#discussion)
 - [Conclusion](#conclusion)
 - [References](#references)
@@ -35,18 +29,18 @@ This report presents a detailed analysis of the Flanker Dataset using functional
 Cognitive control processes, particularly attention and response inhibition, were investigated using the Flanker Dataset and fMRI. This report details the experimental design, data collection procedures, and a comprehensive analysis pipeline.
 
 ## Experimental Design
+![Flanker Task](assets/images/Flanker_Task.png)
+Figure 1, Flanker Task Trial
 
 The Flanker task, a well-established paradigm for studying cognitive control, was employed. Participants were presented with Congruent and Incongruent Flanker trials, requiring a button press based on the central arrow's direction.
 
 ## Data Collection
 
-Twenty-six adult participants underwent fMRI scans while performing the Flanker task. High-resolution anatomical images and functional scans were acquired.
+Twenty-six adult participants underwent 2 fMRI runs while performing the Flanker task. High-resolution anatomical images and functional scans were acquired.
 
 ## Analysis
-
-### Cognitive Control Assessment
-
-To ensure reliable results, cognitive control was assessed by analyzing reaction times, demonstrating robust differences between congruent and incongruent conditions.
+![Project Workflow](assets/images/Project_Workflow.png)
+Figure 1, Project Workflow
 
 ### Quality Control
 
@@ -54,7 +48,7 @@ Quality control procedures identified motion artifacts in specific subjects, add
 
 ### Preprocessing
 
-Anatomical and functional images underwent preprocessing steps, including brain extraction, temporal filtering, motion correction, and registration to the MNI152 template.
+Anatomical and functional images underwent preprocessing steps, including brain extraction, temporal filtering, motion correction, smoothing, registration of functional to anatomical, and normalization to the MNI152 template.
 
 ### First-Level Analysis
 
@@ -62,11 +56,11 @@ The first-level analysis included GLM modeling with contrasts for congruent and 
 
 ### Second-Level Analysis
 
-Different algorithms, including Fixed Effect, Flame 1, and Simple OLS, were applied in the second-level analysis to determine the most effective approach.
+Different algorithms, including Fixed Effect, Flame 1, and Simple OLS, were applied in the second-level analysis to determine the most effective approach "Fixed Effect".
 
 ### Third-Level Analysis
 
-Exploratory group analysis was performed using Flame 1 based on the Fixed Effect algorithm to assess the effectiveness of different algorithms.
+Whole-brain analysis was performed using Flame 1 based on the Fixed Effect algorithm.
 
 ### ROI Analysis
 
@@ -74,43 +68,28 @@ Regions of interest (ROIs) were identified and confirmed using a confirmation te
 
 ## Results and Interpretation
 
-### First-Level Analysis Results
+### Lateral Occipital Cortex, Inferior Division
+![Lateral Occipital Cortex, Inferior Division](assets/images/Lateral_Occipital_Cortex_Inferior_Division.png)
+Figure 2, Lateral Occipital Cortex, Inferior Division
 
-1. **Contrast 1: Active congruent pixels only**
-   - ![Figure 1](assets/images/Fig1.png) Active congruent pixels across the brain.
+- To decrease false positives, Eklund (2016) suggested accepting only P-values < 0.001.
+- Lateral Occipital Cortex, Inferior Division: Associated with visual processing, object recognition, and scene perception.
+- Flanker Task: Focuses on cognitive control. However, participants still engage early visual areas while processing visual stimuli.
 
-2. **Contrast 2: Active incongruent pixels only**
-   - ![Figure 2](assets/images/Fig2.png) Active incongruent pixels throughout the brain.
+### Lateral Occipital Cortex, Superior division
+![Lateral Occipital Cortex, Superior Division](assets/images/Lateral_Occipital_Cortex_Superior_Division.png)
+Figure 3, Lateral Occipital Cortex, Superior Division
 
-3. **Contrast 3: Active incongruent minus congruent pixels only**
-   - ![Figure 3](assets/images/Fig3.png) Active pixels showing specific regions of activation.
+- Lateral Occipital Cortex, Superior division: Associated with visual motion information.
+- Flanker Task: Focuses on cognitive control. However, participants still process visual motion information while processing visual stimuli.
 
-### Third-Level Analysis Results
+### Precentral Gyrus
+![Precentral Gyrus](assets/images/Precentral_Gyrus.png)
+Figure 4, Precentral Gyrus
 
-4. **Flame 1 based on Fixed Effect**
-   - ![Figure 4](assets/images/Fig4.png) Results indicating the most favorable choosed algorithm.
-
-5. **Flame 1 based on Flame 1**
-   - ![Figure 5](assets/images/Fig5.png) Results using the Flame 1 algorithm.
-
-6. **Flame 1 based on Simple OLS**
-   - ![Figure 6](assets/images/Fig7.png) Results using Simple OLS.
-
-
-### ROI Analysis Results
-
-7. **Contrast type dominance on each key point**
-   - ![Figure 7](assets/images/Fig10.png) All key spheres exhibit a P-value <<< 0.001 for each contrast, signifying their statistical significance; furthermore, complete overlap enables the assessment of contrast ratios within the key point spheres, with Python code scripts utilized for mean calculation, one-sample t-tests, and figure generation.
-
-### Final Results
-8. **Cluster 3, 6 (Lateral Occipital Cortex, Inferior division) [Silver Color]**
-   - ![Figure 8](assets/images/Fig15.png) The flanker task's connection to the "Lateral Occipital Cortex, Inferior division" is indirect; although focused on cognitive control, the task involves initial visual processing, suggesting the cortex contributes to early visual analysis of flanker stimuli.
-
-9. **Cluster 5 (Lateral Occipital Cortex, Superior division) [Silver Color]**
-    - ![Figure 9](assets/images/Fig16.png) Reveals a non-direct association between the flanker task and the "Lateral Occipital Cortex, Superior division," primarily engaged in visual motion processing, indicating a potential involvement in aspects like motion perception during the flanker task.
-
-10. **Cluster 4 (Precentral Gyrus) [Silver Color]**
-    - ![Figure 10](assets/images/Fig17.png) Illustrates an indirect link between the flanker task and the "Precentral Gyrus," a key area for motor control, with cognitive control regions like ACC, DLPFC, and IFG facilitating motor response execution during the task.
+- Precentral Gyrus: Associated with motor control and movement initiation.
+- Flanker Task: Requires cognitive control. Participants inhibit responses, supported by regions like the dorsolateral prefrontal cortex, which communicate with the precentral gyrus for motor execution, emphasizing its role in response control.
+- Acknowledged no direct task link, like activating dorsomedial prefrontal cortex.
 
 ## Discussion
 
@@ -128,7 +107,7 @@ Kelly, A.M., Uddin, L.Q., Biswal, B.B., Castellanos, F.X., Milham, M.P. (2008). 
 
 ## Submission
 
-This [Report](Investigating-Cognitive-Control-via-fMRI_Report.pdf), authored by Mahmoud Yaser Salman, was submitted as the final project for the "Neuroimaging" course, under the guidance of Prof. Meena Makary.
+This [Report](Investigating-Cognitive-Control-via-fMRI_Report.pdf), authored by Mahmoud Yaser Salman, was submitted as the final project for the "fMRI Data Analysis" course, under the guidance of Prof. Meena M. Makary.
 
 ## Scripts
 
