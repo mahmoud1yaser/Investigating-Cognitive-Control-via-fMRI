@@ -29,7 +29,7 @@ This report presents a detailed analysis of the Flanker Dataset using functional
 Cognitive control processes, particularly attention and response inhibition, were investigated using the Flanker Dataset and fMRI. This report details the experimental design, data collection procedures, and a comprehensive analysis pipeline.
 
 ## Experimental Design
-![Flanker Task](assets/images/Flanker_Task.png)
+![Flanker Task](assets/images/Flanker_Task.png)<br>
 Figure 1, Flanker Task Trial
 
 The Flanker task, a well-established paradigm for studying cognitive control, was employed. Participants were presented with Congruent and Incongruent Flanker trials, requiring a button press based on the central arrow's direction.
@@ -39,7 +39,7 @@ The Flanker task, a well-established paradigm for studying cognitive control, wa
 Twenty-six adult participants underwent 2 fMRI runs while performing the Flanker task. High-resolution anatomical images and functional scans were acquired.
 
 ## Analysis
-![Project Workflow](assets/images/Project_Workflow.png)
+![Project Workflow](assets/images/Project_Workflow.png)<br>
 Figure 1, Project Workflow
 
 ### Quality Control
@@ -69,7 +69,7 @@ Regions of interest (ROIs) were identified and confirmed using a confirmation te
 ## Results and Interpretation
 
 ### Lateral Occipital Cortex, Inferior Division
-![Lateral Occipital Cortex, Inferior Division](assets/images/Lateral_Occipital_Cortex_Inferior_Division.png)
+![Lateral Occipital Cortex, Inferior Division](assets/images/Lateral_Occipital_Cortex_Inferior_Division.png)<br>
 Figure 2, Lateral Occipital Cortex, Inferior Division
 
 - To decrease false positives, Eklund (2016) suggested accepting only P-values < 0.001.
@@ -77,14 +77,14 @@ Figure 2, Lateral Occipital Cortex, Inferior Division
 - Flanker Task: Focuses on cognitive control. However, participants still engage early visual areas while processing visual stimuli.
 
 ### Lateral Occipital Cortex, Superior division
-![Lateral Occipital Cortex, Superior Division](assets/images/Lateral_Occipital_Cortex_Superior_Division.png)
+![Lateral Occipital Cortex, Superior Division](assets/images/Lateral_Occipital_Cortex_Superior_Division.png)<br>
 Figure 3, Lateral Occipital Cortex, Superior Division
 
 - Lateral Occipital Cortex, Superior division: Associated with visual motion information.
 - Flanker Task: Focuses on cognitive control. However, participants still process visual motion information while processing visual stimuli.
 
 ### Precentral Gyrus
-![Precentral Gyrus](assets/images/Precentral_Gyrus.png)
+![Precentral Gyrus](assets/images/Precentral_Gyrus.png)<br>
 Figure 4, Precentral Gyrus
 
 - Precentral Gyrus: Associated with motor control and movement initiation.
